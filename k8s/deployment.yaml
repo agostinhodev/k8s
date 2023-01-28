@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: "node-server"
-  replicas: 3
+  replicas: 5
   template:
     metadata:
       name: "node-server"
@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
         - name: "node-server"
-          image: "agostinhoneto/hello-node:v5"
+          image: "agostinhoneto/hello-node:v6"
