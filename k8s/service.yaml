@@ -5,10 +5,9 @@ metadata:
 spec:
   selector:
     app: "node-server"
-  type: NodePort
+  type: LoadBalancer
   ports:
     - name: "node-server-service"
       port: 80
       targetPort: 3000
       protocol: TCP
-      nodePort: 30001
