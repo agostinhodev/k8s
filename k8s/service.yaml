@@ -5,9 +5,10 @@ metadata:
 spec:
   selector:
     app: "node-server"
-  type: ClusterIP
+  type: NodePort
   ports:
     - name: "node-server-service"
       port: 80
       targetPort: 3000
       protocol: TCP
+      nodePort: 30001
